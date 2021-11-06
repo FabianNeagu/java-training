@@ -9,13 +9,10 @@ public class FooBarQix {
 
         char[] digits = String.valueOf(i).toCharArray();
         for (char digit : digits) {
-
             if (digit == '3') s += "Foo";
             if (digit == '5') s += "Bar";
             if (digit == '7') s += "Qix";
-
         }
-
         if (s.isEmpty()) {
             s = String.valueOf(i);
         }
@@ -48,7 +45,6 @@ public class FooBarQix {
             else if (digit == '0') s += "*";
             else if (!isDivisible) s += digit;
         }
-
         return s;
     }
 }
