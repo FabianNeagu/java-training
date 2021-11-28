@@ -9,5 +9,6 @@ public class TestAnimals
         Animal a=new Fish();
         Animal e=new Spider();
         Pet p=new Cat();
+        System.out.println("Ce face puiu?");
     }
 }

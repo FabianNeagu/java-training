@@ -1,8 +1,16 @@
 package code._4_student_effort;
 
-public class Main {
+import code._4_student_effort._1_iterator.ArrayCustomIterator;
 
-    public static void main(String[] args) {
-        //TODO put your code changes in here
+public class Main
+{
+    public static void main(String[] args)
+    {
+        /* // Exercitiul 1
+        int[] arr=new int[] {1,2,3};
+        ArrayCustomIterator it=new ArrayCustomIterator(arr);
+        while(it.hasnext())
+            System.out.println(it.next());
+         */
     }
 }
