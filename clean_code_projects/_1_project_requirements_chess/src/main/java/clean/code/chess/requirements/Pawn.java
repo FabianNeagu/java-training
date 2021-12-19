@@ -43,8 +43,25 @@ public class Pawn {
         pieceColor = value;
     }
 
-    public void Move(MovementType movementType, int newX, int newY) {
-        throw new UnsupportedOperationException("Need to implement Pawn.Move()");
+    public void Move(MovementType movementType, int newX, int newY)
+    {
+        if(movementType.equals(movementType.MOVE))
+        {
+            if(pieceColor.equals(PieceColor.WHITE))
+            {
+                if(this.getChesssBoard().getPiece(xCoordinate+1,yCoordinate)==null && newX==xCoordinate+1  && newY==yCoordinate)
+                {
+                    xCoordinate=xCoordinate+1;
+                }
+            }
+            if(pieceColor.equals(PieceColor.BLACK)&& newX==xCoordinate-1  && newY==yCoordinate)
+            {
+                if(this.getChesssBoard().getPiece(xCoordinate-1,yCoordinate)==null)
+                {
+                    xCoordinate=xCoordinate-1;
+                }
+            }
+        }
     }
 
     @Override

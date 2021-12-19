@@ -4,9 +4,10 @@ public class GenericList<T> implements IGenericList<T> {
 
     private IGenericNode<T> root;
 
-    public GenericList(T rootValue) {
+    public GenericList( IGenericNode<T> root1) {
         this.root = new GenericNode<>();
-        this.root.setValue(rootValue);
+        this.root.setValue(root1.getValue());
+        this.root.setNext(root1.getNext());
     }
 
     @Override
